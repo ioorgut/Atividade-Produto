@@ -1,6 +1,6 @@
 package com.example.produto.enums;
 
-public enum ProdutoEnum {
+public enum StatusProduto {
     DISPONIVEL,
     SEM_ESTOQUE,
     DESCONTINUADO
