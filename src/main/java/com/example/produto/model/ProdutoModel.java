@@ -1,11 +1,10 @@
 package com.example.produto.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.example.produto.enums.StatusProduto;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "PRODUTOS")
 public class ProdutoModel {
 
     @Id
@@ -14,6 +13,8 @@ public class ProdutoModel {
     private String nome;
     private Double preco;
     private Integer quantidadeEmEstoque;
+
+    private StatusProduto statusProduto;
 
     public ProdutoModel() {
     }
